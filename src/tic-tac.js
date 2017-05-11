@@ -1,3 +1,7 @@
+/**
+ * Simple Tic-Tac-Toe Game with ReactJS from ReactJS Tutorial
+ */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -17,7 +21,7 @@ class Board extends React.Component {
     return (
       <Square
         value={this.props.squares[i]}
-        onClick={() => {this.props.onClick(i)}}
+        onClick={() => {this.props.onClick(i);}}
       />
     );
   }
@@ -54,7 +58,7 @@ class Game extends React.Component {
       }],
       xIsNext: true,
       stepNumber: 0
-    }
+    };
     this.moveCount = 0;
   }
 
@@ -113,7 +117,7 @@ class Game extends React.Component {
         <div className="game-board">
           <Board
             squares={current.squares}
-            onClick={(i) => { this.handleClick(i)}}
+            onClick={(i) => { this.handleClick(i);}}
           />
         </div>
         <div className="game-info">
