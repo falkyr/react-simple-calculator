@@ -3,7 +3,7 @@
 To run the example just clone the repository in your local.
 
 ```
-$ git clone <url>
+$ git clone https://github.com/falkyr/react-simple-calculator.git
 ```
 
 After clone, install node modules executing the next line in the root of your project folder
